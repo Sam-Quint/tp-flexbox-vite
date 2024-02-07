@@ -1,0 +1,12 @@
+.appearance_image{
+    border: solid 0.3rem;
+    border-image: var(--gradient)30;
+  }
+  .appearance_details{
+    display: flex;
+    margin: 0 10px;
+    font-style: italic;
+    justify-content: center;
+    font-size: 12px;
+    background-image: var(--gradient);
+  }

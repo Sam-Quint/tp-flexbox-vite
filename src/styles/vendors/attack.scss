@@ -1,0 +1,16 @@
+section{
+    display: flex;
+    align-items: center;
+    margin: 15vh 2px;
+  }
+  .attack_name{
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .attack_des{
+    display: flex;
+    align-items: center;
+  }
+  .attack_details{
+    font-size: 14px;
+  }

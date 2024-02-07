@@ -1,4 +1,7 @@
 @import 'vendors/reset.scss';
+@import 'vendors/identity.scss';
+@import 'vendors/appearance.scss';
+@import 'vendors/attack.scss';
 * {
     box-sizing: border-box;
     --gradient: linear-gradient(to right, #FEEC01,#77731E);
@@ -9,10 +12,10 @@
   }
   body{
     background-color: rgb(135, 203, 98);
-    position: relative;
     padding: 5px;
     border: solid 1rem;
     border-image: var(--gradient)30;
+    min-height: 100vh;
   }
   header{
     margin: 0 10px;
@@ -26,48 +29,28 @@
     display: flex;
     align-items: center;
   }
-  .identity_evolution{
-    font-size: 12px;
-  }
-  .identity_name{
-    font-weight: bolder;
-    font-size: larger;
-  }
-  .identity_life{
-    color: red;
-  }
+  
   figure{
     margin: 0 10px;
   }
-  .appearance_image{
-    border: solid 0.3rem;
-    border-image: var(--gradient)30;
-  }
-  .appearance_details{
+  
+  ul{
+    border-top: 3px solid black;
     display: flex;
-    margin: 0 10px;
-    font-style: italic;
-    justify-content: center;
-    font-size: 12px;
-    background-image: var(--gradient);
+    justify-content: space-between;
+    font-size: small;
   }
-  section{
+  li{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 40px 10px;
   }
-  .attack_cost{
-    display: flex;
-
-  }
-  .attack_details span{
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .attack_des{
-    margin: 0 20px;
-  }
-  .attack_details{
+  footer{
+    margin: 0px 5px;
+    border: 0.2rem solid;
+    border-image: var(--gradient)30;
+    
     font-size: smaller;
+    font-style: italic;
+    
   }
